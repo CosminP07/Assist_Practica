@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Cosmin\\Desktop\\Assist_Practica\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Cosmin\\Desktop\\Assist_Practica\\assist-practica\\src\\services\\dogApi.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assist-practica\\src\\services\\dogApi.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Cosmin\\Desktop\\Assist_Practica\\assist-practica\\src\\App.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assist-practica\\src\\App.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Cosmin\\Desktop\\Assist_Practica\\assist-practica\\src\\pages\\BreedDetails.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assist-practica\\src\\pages\\BreedDetails.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Cosmin\\Desktop\\Assist_Practica\\assist-practica\\src\\services\\dogApi.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assist-practica\\src\\services\\dogApi.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Cosmin\\Desktop\\Assist_Practica\\assist-practica\\src\\pages\\AllBreeds.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
@@ -19,12 +19,28 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assist-practica\\src\\pages\\Home.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Cosmin\\Desktop\\Assist_Practica\\assist-practica\\src\\components\\DogCard.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assist-practica\\src\\components\\DogCard.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Cosmin\\Desktop\\Assist_Practica\\assist-practica\\src\\pages\\Favorites.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assist-practica\\src\\pages\\Favorites.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Cosmin\\Desktop\\Assist_Practica\\assist-practica\\src\\pages\\BreedDetails.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assist-practica\\src\\pages\\BreedDetails.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Cosmin\\Desktop\\Assist_Practica\\assist-practica\\src\\components\\Navbar.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assist-practica\\src\\components\\Navbar.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Cosmin\\Desktop\\Assist_Practica\\assist-practica\\src\\components\\DogCard.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assist-practica\\src\\components\\DogCard.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Cosmin\\Desktop\\Assist_Practica\\assist-practica\\src\\index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assist-practica\\src\\index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Cosmin\\Desktop\\Assist_Practica\\assist-practica\\src\\index.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assist-practica\\src\\index.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,30 +50,95 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "index.js",
+              "DocumentMoniker": "C:\\Users\\Cosmin\\Desktop\\Assist_Practica\\assist-practica\\src\\index.js",
+              "RelativeDocumentMoniker": "assist-practica\\src\\index.js",
+              "ToolTip": "C:\\Users\\Cosmin\\Desktop\\Assist_Practica\\assist-practica\\src\\index.js",
+              "RelativeToolTip": "assist-practica\\src\\index.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-04-30T10:48:20.18Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Favorites.jsx",
+              "DocumentMoniker": "C:\\Users\\Cosmin\\Desktop\\Assist_Practica\\assist-practica\\src\\pages\\Favorites.jsx",
+              "RelativeDocumentMoniker": "assist-practica\\src\\pages\\Favorites.jsx",
+              "ToolTip": "C:\\Users\\Cosmin\\Desktop\\Assist_Practica\\assist-practica\\src\\pages\\Favorites.jsx",
+              "RelativeToolTip": "assist-practica\\src\\pages\\Favorites.jsx",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-04-30T12:21:11.042Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "App.jsx",
+              "DocumentMoniker": "C:\\Users\\Cosmin\\Desktop\\Assist_Practica\\assist-practica\\src\\App.jsx",
+              "RelativeDocumentMoniker": "assist-practica\\src\\App.jsx",
+              "ToolTip": "C:\\Users\\Cosmin\\Desktop\\Assist_Practica\\assist-practica\\src\\App.jsx",
+              "RelativeToolTip": "assist-practica\\src\\App.jsx",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-04-30T10:50:10.88Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DogCard.jsx",
+              "DocumentMoniker": "C:\\Users\\Cosmin\\Desktop\\Assist_Practica\\assist-practica\\src\\components\\DogCard.jsx",
+              "RelativeDocumentMoniker": "assist-practica\\src\\components\\DogCard.jsx",
+              "ToolTip": "C:\\Users\\Cosmin\\Desktop\\Assist_Practica\\assist-practica\\src\\components\\DogCard.jsx",
+              "RelativeToolTip": "assist-practica\\src\\components\\DogCard.jsx",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-04-30T10:39:46.701Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Home.jsx",
+              "DocumentMoniker": "C:\\Users\\Cosmin\\Desktop\\Assist_Practica\\assist-practica\\src\\pages\\Home.jsx",
+              "RelativeDocumentMoniker": "assist-practica\\src\\pages\\Home.jsx",
+              "ToolTip": "C:\\Users\\Cosmin\\Desktop\\Assist_Practica\\assist-practica\\src\\pages\\Home.jsx",
+              "RelativeToolTip": "assist-practica\\src\\pages\\Home.jsx",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAB8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-04-30T10:40:21.312Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "dogApi.js",
               "DocumentMoniker": "C:\\Users\\Cosmin\\Desktop\\Assist_Practica\\assist-practica\\src\\services\\dogApi.js",
               "RelativeDocumentMoniker": "assist-practica\\src\\services\\dogApi.js",
               "ToolTip": "C:\\Users\\Cosmin\\Desktop\\Assist_Practica\\assist-practica\\src\\services\\dogApi.js",
               "RelativeToolTip": "assist-practica\\src\\services\\dogApi.js",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2025-04-30T10:41:12.591Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "BreedDetails.jsx",
               "DocumentMoniker": "C:\\Users\\Cosmin\\Desktop\\Assist_Practica\\assist-practica\\src\\pages\\BreedDetails.jsx",
               "RelativeDocumentMoniker": "assist-practica\\src\\pages\\BreedDetails.jsx",
               "ToolTip": "C:\\Users\\Cosmin\\Desktop\\Assist_Practica\\assist-practica\\src\\pages\\BreedDetails.jsx",
               "RelativeToolTip": "assist-practica\\src\\pages\\BreedDetails.jsx",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAUwBUAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
               "WhenOpened": "2025-04-30T10:40:54.04Z",
               "EditorCaption": ""
@@ -70,48 +151,35 @@
               "RelativeDocumentMoniker": "assist-practica\\src\\pages\\AllBreeds.jsx",
               "ToolTip": "C:\\Users\\Cosmin\\Desktop\\Assist_Practica\\assist-practica\\src\\pages\\AllBreeds.jsx",
               "RelativeToolTip": "assist-practica\\src\\pages\\AllBreeds.jsx",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
               "WhenOpened": "2025-04-30T10:40:37.508Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Home.jsx",
-              "DocumentMoniker": "C:\\Users\\Cosmin\\Desktop\\Assist_Practica\\assist-practica\\src\\pages\\Home.jsx",
-              "RelativeDocumentMoniker": "assist-practica\\src\\pages\\Home.jsx",
-              "ToolTip": "C:\\Users\\Cosmin\\Desktop\\Assist_Practica\\assist-practica\\src\\pages\\Home.jsx",
-              "RelativeToolTip": "assist-practica\\src\\pages\\Home.jsx",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-04-30T10:40:21.312Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "DogCard.jsx",
-              "DocumentMoniker": "C:\\Users\\Cosmin\\Desktop\\Assist_Practica\\assist-practica\\src\\components\\DogCard.jsx",
-              "RelativeDocumentMoniker": "assist-practica\\src\\components\\DogCard.jsx",
-              "ToolTip": "C:\\Users\\Cosmin\\Desktop\\Assist_Practica\\assist-practica\\src\\components\\DogCard.jsx",
-              "RelativeToolTip": "assist-practica\\src\\components\\DogCard.jsx",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-04-30T10:39:46.701Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Navbar.jsx",
               "DocumentMoniker": "C:\\Users\\Cosmin\\Desktop\\Assist_Practica\\assist-practica\\src\\components\\Navbar.jsx",
               "RelativeDocumentMoniker": "assist-practica\\src\\components\\Navbar.jsx",
               "ToolTip": "C:\\Users\\Cosmin\\Desktop\\Assist_Practica\\assist-practica\\src\\components\\Navbar.jsx",
               "RelativeToolTip": "assist-practica\\src\\components\\Navbar.jsx",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
               "WhenOpened": "2025-04-30T10:39:20.498Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "index.css",
+              "DocumentMoniker": "C:\\Users\\Cosmin\\Desktop\\Assist_Practica\\assist-practica\\src\\index.css",
+              "RelativeDocumentMoniker": "assist-practica\\src\\index.css",
+              "ToolTip": "C:\\Users\\Cosmin\\Desktop\\Assist_Practica\\assist-practica\\src\\index.css",
+              "RelativeToolTip": "assist-practica\\src\\index.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-04-30T13:14:56.141Z",
               "EditorCaption": ""
             }
           ]
