@@ -16,3 +16,6 @@ export const getRandomImage = () => API.get('/images/search'); //cerere GET pent
 
 export const getImageByBreed = (breedId) => API.get(`/images/search?breed_id=${breedId}&limit=8`); //cerere GET pentru a obtine o imagine de caine dupa ID-ul rasei
 
+// Obține mai multe imagini diferite pentru o rasă
+export const getImagesByBreed = (breedId) => API.get(`/images/search?breed_id=${breedId}&limit=6`);
+

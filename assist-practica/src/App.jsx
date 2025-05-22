@@ -1,33 +1,62 @@
 import './App.css';
-import React from 'react';
+import React, { useState } from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; //pentru navigarea intre pagini
-
-//Importarea paginilor
+// Importarea paginilor
 import Home from './pages/Home';
 import AllBreeds from './pages/AllBreeds';
 import BreedDetails from './pages/BreedDetails';
 import Favorites from './pages/Favorites';
 
+// Importarea componentei Navbar
 import Navbar from './components/Navbar';
 
 function App() {
+  const [searchQuery, setSearchQuery] = useState(''); // Stare pentru căutarea rasei de câini
+  const [favorites, setFavorites] = useState([]); // Stare pentru lista de favorite
+
+  // Funcție pentru a adăuga sau elimina o rasă din favorite
+  const toggleFavorite = (breedId) => {
+    setFavorites((prev) =>
+      prev.includes(breedId)
+        ? prev.filter((id) => id !== breedId)
+        : [...prev, breedId]
+    );
+  };
+
   return (
-      <Router>
-          {/* Navbar component is used for navigation between pages */}
-          <Navbar />
-          {/* Routes component is used to define the different routes in the application */}
-          <Routes>
-                {/* Route for the home page */}
-                <Route path="/" element={<Home />} />
-                {/* Route for the all breeds page */}
-                <Route path="/breeds" element={<AllBreeds />} />
-                {/* Route for the breed details page */}
-                <Route path="/breed/:id" element={<BreedDetails />} />
-                {/* Route for the favorites page */}
-                <Route path="/favorites" element={<Favorites />} />
-          </Routes>
-      </Router>
+    <Router>
+      {/* Bara de navigație cu bara de căutare */}
+      <Navbar searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
+
+      {/* Definirea rutelor principale */}
+      <Routes>
+        <Route path="/" element={<Home />} />
+        {/* Trecem funcția și lista de favorite în AllBreeds */}
+        <Route
+          path="/breeds"
+          element={
+            <AllBreeds
+              searchQuery={searchQuery}
+              favorites={favorites}
+              onFavoriteToggle={toggleFavorite}
+            />
+          }
+        />
+        <Route
+  path="/breed/:id"
+  element={
+    <BreedDetails
+      favorites={favorites}
+      onFavoriteToggle={toggleFavorite}
+    />
+  }
+/>
+
+        <Route path="/breed/:id" element={<BreedDetails />} />
+        <Route path="/favorites" element={<Favorites favorites={favorites} />} />
+      </Routes>
+    </Router>
   );
 }
 
