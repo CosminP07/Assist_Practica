@@ -1,8 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+
+
 // Componenta Navbar primește starea și funcția pentru actualizarea căutării
 function Navbar({ searchQuery, setSearchQuery }) {
+  const toggleDarkMode = () => {
+  document.body.classList.toggle("dark-mode");
+};
   return (
     <nav
       style={{
@@ -20,6 +25,10 @@ function Navbar({ searchQuery, setSearchQuery }) {
         <Link to="/breeds" style={linkStyle}>Breeds</Link>
         <Link to="/favorites" style={linkStyle}>Favorites</Link>
       </div>
+
+      <button onClick={toggleDarkMode} style={{ marginLeft: 'auto', marginRight: '20px' }}>
+  🌓 Toggle Theme
+</button>
 
       {/* Bara de căutare */}
       <input

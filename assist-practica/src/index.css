@@ -9,6 +9,21 @@ body {
   color: var(--text-color);
 }
 
+body.dark-mode {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+body.dark-mode nav {
+  background-color: #1e1e1e;
+}
+
+body.dark-mode .card {
+  background-color: #1a1a1a;
+  color: white;
+}
+
+
 /* Variabile CSS pentru culori personalizabile */
 :root {
   --primary-color: #4CAF50;
@@ -65,12 +80,37 @@ nav a:hover {
 
 /* Stil pentru carduri */
 .card {
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+.card-inner {
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  backface-visibility: hidden;
   border-radius: 16px;
+  padding: 16px;
+}
+
+.card-front {
   background-color: white;
-  box-shadow: 0px 3px 6px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  padding: 1rem;
-  text-align: center;
+}
+
+.card-back {
+  background-color: #4caf50;
+  color: white;
+  transform: rotateY(180deg);
 }
 
 
@@ -107,11 +147,29 @@ button:hover {
   animation: fadeIn 0.5s ease-in-out;
 }
 
+.loader {
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #4CAF50;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+  margin: auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
 /* Card hover effect */
+/*
 .card-hover {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .card-hover:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-}
+}*/
+
