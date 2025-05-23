@@ -1,38 +1,38 @@
-import './App.css';
-import React, { useState } from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-
-// Importarea paginilor
+// App.jsx
+import React, { useEffect, useState } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import AllBreeds from './pages/AllBreeds';
 import BreedDetails from './pages/BreedDetails';
 import Favorites from './pages/Favorites';
-
-// Importarea componentei Navbar
-import Navbar from './components/Navbar';
+import { getAllBreeds } from './services/dogApi';
 
 function App() {
-  const [searchQuery, setSearchQuery] = useState(''); // Stare pentru căutarea rasei de câini
-  const [favorites, setFavorites] = useState([]); // Stare pentru lista de favorite
+  const [searchQuery, setSearchQuery] = useState('');
+  const [favorites, setFavorites] = useState([]);
+  const [breeds, setBreeds] = useState([]);
 
-  // Funcție pentru a adăuga sau elimina o rasă din favorite
+  useEffect(() => {
+    getAllBreeds().then((res) => setBreeds(res.data));
+  }, []);
+
   const toggleFavorite = (breedId) => {
-    setFavorites((prev) =>
-      prev.includes(breedId)
-        ? prev.filter((id) => id !== breedId)
-        : [...prev, breedId]
+    setFavorites((prevFavorites) =>
+      prevFavorites.includes(breedId)
+        ? prevFavorites.filter((id) => id !== breedId)
+        : [...prevFavorites, breedId]
     );
   };
 
   return (
     <Router>
-      {/* Bara de navigație cu bara de căutare */}
-      <Navbar searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
-
-      {/* Definirea rutelor principale */}
+      <Navbar
+        searchQuery={searchQuery}
+        setSearchQuery={setSearchQuery}
+      />
       <Routes>
         <Route path="/" element={<Home />} />
-        {/* Trecem funcția și lista de favorite în AllBreeds */}
         <Route
           path="/breeds"
           element={
@@ -40,21 +40,20 @@ function App() {
               searchQuery={searchQuery}
               favorites={favorites}
               onFavoriteToggle={toggleFavorite}
+              breeds={breeds}
             />
           }
         />
         <Route
-  path="/breed/:id"
-  element={
-    <BreedDetails
-      favorites={favorites}
-      onFavoriteToggle={toggleFavorite}
-    />
-  }
-/>
-
-        <Route path="/breed/:id" element={<BreedDetails />} />
-        <Route path="/favorites" element={<Favorites favorites={favorites} />} />
+          path="/favorites"
+          element={
+            <Favorites
+              favorites={favorites}
+              onFavoriteToggle={toggleFavorite}
+            />
+          }
+        />
+        <Route path="/breed/:id" element={<BreedDetails onFavoriteToggle={toggleFavorite} favorites={favorites} />} />
       </Routes>
     </Router>
   );

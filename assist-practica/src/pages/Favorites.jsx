@@ -1,60 +1,73 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { getAllBreeds } from '../services/dogApi';
+import Lottie from 'lottie-react';
+import dogLoading from '../assets/dogLoading.json';
 
-function Favorites({ favorites }) {
+function Favorites({ favorites = [] }) {
   const [allBreeds, setAllBreeds] = useState([]);
+  const [loading, setLoading] = useState(true);
   const navigate = useNavigate();
 
-  // Fetch toate rasele la montare (pentru a extrage datele favoritelor)
   useEffect(() => {
     getAllBreeds().then((res) => {
       setAllBreeds(res.data);
+      setLoading(false);
     });
   }, []);
 
-  // Filtrăm doar rasele care se află în lista de favorite
-  const favoriteBreeds = allBreeds.filter((breed) => favorites.includes(breed.id));
+  const favoriteBreeds = allBreeds.filter(breed => favorites.includes(breed.id));
 
   return (
     <div style={styles.container}>
-      <h2>My Favorite Breeds</h2>
-      {favoriteBreeds.length === 0 && <p>No favorites yet. Go add some!</p>}
-      <div style={styles.grid}>
-        {favoriteBreeds.map((breed) => (
-          <div
-            key={breed.id}
-            style={styles.card}
-            onClick={() => navigate(`/breed/${breed.id}`)} // Navighează la BreedDetails
-          >
-            <h3>{breed.name}</h3>
-            {breed.image?.url && (
-              <img
-                src={breed.image.url}
-                alt={breed.name}
-                style={styles.image}
-              />
-            )}
-          </div>
-        ))}
-      </div>
+      <h2 style={styles.title}>❤️ Favorite Breeds</h2>
+
+      {loading ? (
+        <div style={styles.loadingWrapper}>
+          <Lottie animationData={dogLoading} loop autoplay style={{ width: 200, height: 200 }} />
+        </div>
+      ) : favoriteBreeds.length === 0 ? (
+        <div style={styles.loadingWrapper}>
+          <Lottie animationData={dogLoading} loop autoplay style={{ width: 200, height: 200 }} />
+          <p>No favorites yet. Go add some!</p>
+        </div>
+      ) : (
+        <div style={styles.grid}>
+          {favoriteBreeds.map((breed) => (
+            <div
+              key={breed.id}
+              style={styles.card}
+              onClick={() => navigate(`/breed/${breed.id}`)}
+            >
+              <h3>{breed.name}</h3>
+              {breed.image?.url && (
+                <img src={breed.image.url} alt={breed.name} style={styles.image} />
+              )}
+            </div>
+          ))}
+        </div>
+      )}
     </div>
   );
 }
 
 export default Favorites;
 
-// 🖌 Stiluri moderne pentru grid și carduri
 const styles = {
   container: {
     padding: '20px',
     textAlign: 'center',
+    maxWidth: '1200px',
+    margin: '0 auto',
+  },
+  title: {
+    fontSize: '2rem',
+    marginBottom: '20px',
   },
   grid: {
     display: 'grid',
     gridTemplateColumns: 'repeat(auto-fill, minmax(250px, 1fr))',
     gap: '20px',
-    marginTop: '20px',
   },
   card: {
     backgroundColor: '#ffffff',
@@ -70,4 +83,12 @@ const styles = {
     objectFit: 'cover',
     borderRadius: '12px',
   },
+  loadingWrapper: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center',
+    padding: '40px',
+    fontSize: '1.2rem',
+  }
 };

@@ -14,6 +14,38 @@
   color: white;
 }
 
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #f8f8f8;
+  color: #333;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode,
+.App.dark-mode {
+  background-color: #121212;
+  color: #eee;
+}
+
+.App.dark-mode a {
+  color: #90caf9;
+}
+
+.App.dark-mode input,
+.App.dark-mode select,
+.App.dark-mode button {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+  border-color: #555;
+}
+
+.App.dark-mode .card {
+  background-color: #1c1c1c;
+  color: white;
+}
+
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

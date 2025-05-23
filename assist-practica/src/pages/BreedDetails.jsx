@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { getAllBreeds, getImagesByBreed } from '../services/dogApi';
+import Lottie from 'lottie-react';
+import dogLoading from '../assets/dogLoading.json';
 
 function BreedDetails({ onFavoriteToggle, favorites }) {
   const { id } = useParams();
@@ -8,17 +10,35 @@ function BreedDetails({ onFavoriteToggle, favorites }) {
   const [images, setImages] = useState([]);
 
   useEffect(() => {
-    getAllBreeds().then((res) => {
-      const found = res.data.find((b) => b.id.toString() === id);
-      setBreed(found);
-    });
+    let mounted = true;
 
-    getImagesByBreed(id).then((res) => {
-      setImages(res.data);
-    });
+    async function fetchData() {
+      try {
+        const breedRes = await getAllBreeds();
+        const found = breedRes.data.find((b) => b.id.toString() === id);
+        if (mounted) setBreed(found);
+
+        const imagesRes = await getImagesByBreed(id);
+        if (mounted) setImages(imagesRes.data);
+      } catch (err) {
+        console.error('Error fetching breed details:', err);
+      }
+    }
+
+    fetchData();
+
+    return () => {
+      mounted = false;
+    };
   }, [id]);
 
-  if (!breed) return <div style={styles.container}>Loading...</div>;
+  if (!breed || images.length === 0) {
+    return (
+      <div style={styles.loadingWrapper}>
+        <Lottie animationData={dogLoading} loop autoplay style={{ width: 200, height: 200 }} />
+      </div>
+    );
+  }
 
   const isFavorite = favorites?.includes(breed.id);
 
@@ -60,6 +80,12 @@ const styles = {
     borderRadius: '16px',
     boxShadow: '0 4px 12px rgba(0,0,0,0.1)',
     textAlign: 'center'
+  },
+  loadingWrapper: {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    height: '60vh'
   },
   title: {
     fontSize: '2rem',
