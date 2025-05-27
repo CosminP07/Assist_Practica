@@ -2,198 +2,193 @@
 
 /* Setări generale pentru font și fundal */
 body {
-  font-family: 'Roboto', sans-serif;
-  background-color: var(--secondary-color);
-  margin: 0;
-  padding: 0;
-  color: var(--text-color);
+  font-family: 'Roboto', sans-serif;         /* Setează fontul de bază pentru întreaga aplicație */
+  background-color: var(--secondary-color);  /* Fundalul general, definit ca variabilă CSS */
+  margin: 0;                                 /* Elimină marginea implicită */
+  padding: 0;                                /* Elimină paddingul implicit */
+  color: var(--text-color);                  /* Culoarea textului implicit, definită prin variabilă */
 }
 
 body.dark-mode {
-  background-color: #121212;
-  color: #f0f0f0;
+  background-color: #121212; /* Fundalul în modul dark */
+  color: #f0f0f0;            /* Culoarea textului în modul dark */
 }
 
 body.dark-mode nav {
-  background-color: #1e1e1e;
+  background-color: #1e1e1e; /* Navbar întunecat în dark mode */
 }
 
 body.dark-mode .card {
-  background-color: #1a1a1a;
-  color: white;
+  background-color: #1a1a1a; /* Fundal întunecat pentru carduri */
+  color: white;              /* Text alb pe carduri în dark mode */
 }
 
 body {
-  margin: 0;
-  font-family: sans-serif;
-  background-color: #f8f8f8;
-  color: #333;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  margin: 0;                                           /* Redundant dar reafirmă resetarea marginilor */
+  font-family: sans-serif;                            /* Suprascrie fontul anterior cu sans-serif generic */
+  background-color: #f8f8f8;                          /* Fundal deschis pentru modul light */
+  color: #333;                                        /* Culoare gri închis pentru text */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Tranziții pentru când se schimbă tema */
 }
 
 body.dark-mode,
 .app.dark-mode {
-  background-color: #121212;
-  color: #eee;
+  background-color: #121212; /* Fundal întunecat pentru body sau root App */
+  color: #eee;               /* Text mai deschis pe fundal închis */
 }
 
 .app.dark-mode a {
-  color: #90caf9;
+  color: #90caf9; /* Culoare albastru deschis pentru linkuri în dark mode */
 }
 
 .app.dark-mode input,
 .app.dark-mode select,
 .app.dark-mode button {
-  background-color: #1e1e1e;
-  color: #f0f0f0;
-  border-color: #555;
+  background-color: #1e1e1e;  /* Fundal închis pentru inputuri, selecturi și butoane */
+  color: #f0f0f0;             /* Text albicios în aceste elemente */
+  border-color: #555;         /* Contur gri închis */
 }
 
 .app.dark-mode .card {
-  background-color: #1c1c1c;
-  color: white;
+  background-color: #1c1c1c;  /* Fundal mai închis pentru carduri */
+  color: white;               /* Text alb */
 }
-
-
 
 /* Variabile CSS pentru culori personalizabile */
 :root {
-  --primary-color: #4CAF50;
-  --secondary-color: #f5f5f5;
-  --text-color: #333;
-  --accent-color: #45a049;
+  --primary-color: #4CAF50;     /* Verde – folosit pentru navbar, butoane etc. */
+  --secondary-color: #f5f5f5;   /* Fundal gri deschis pentru layout general */
+  --text-color: #333;           /* Gri închis pentru text */
+  --accent-color: #45a049;      /* Nuanță mai închisă pentru hover */
 }
 
 /* Titluri și paragrafe */
 h1, h2, h3, p {
-  color: var(--text-color);
+  color: var(--text-color); /* Culoare text standard pentru titluri și paragrafe */
 }
 
 /* Linkuri */
 a {
-  text-decoration: none;
-  color: inherit;
+  text-decoration: none; /* Elimină sublinierea implicită */
+  color: inherit;        /* Preia culoarea de la părintele */
 }
 
 /* Navbar stilizat */
 nav {
-  background-color: var(--primary-color);
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.5rem 1.5rem;
+  background-color: var(--primary-color);          /* Fundal verde pentru navbar */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);            /* Umbră subtilă dedesubt */
+  display: flex;                                   /* Flexbox pentru layout */
+  justify-content: space-between;                  /* Elemente la capetele containerului */
+  align-items: center;                             /* Centrare verticală */
+  padding: 0.5rem 1.5rem;                           /* Spațiere interioară */
 }
 
 /* Linkuri din navbar */
 nav a {
-  color: white;
-  padding: 10px 20px;
-  margin: 0 5px;
-  border-radius: 5px;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  color: white;                                    /* Culoare albă pentru linkuri */
+  padding: 10px 20px;                              /* Spațiu intern pentru clickable area */
+  margin: 0 5px;                                   /* Distanțare între linkuri */
+  border-radius: 5px;                              /* Colțuri rotunjite */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Tranziții pentru hover */
 }
 
 nav a:hover {
-  background-color: var(--accent-color);
-  transform: translateY(-2px);
+  background-color: var(--accent-color); /* Fundal diferit la hover */
+  transform: translateY(-2px);           /* Ridicare ușoară la hover */
 }
 
 /* Search bar din navbar */
 .nav-search {
-  padding: 8px 12px;
-  border-radius: 5px;
-  border: none;
-  outline: none;
-  width: 200px;
-  font-size: 14px;
-  margin-left: 10px;
+  padding: 8px 12px;               /* Spațiu intern */
+  border-radius: 5px;              /* Colțuri rotunjite */
+  border: none;                    /* Fără contur */
+  outline: none;                   /* Fără contur albastru când e selectat */
+  width: 200px;                    /* Lățime fixă */
+  font-size: 14px;                 /* Mărimea fontului */
+  margin-left: 10px;              /* Distanță față de elementul din stânga */
 }
 
 /* Stil pentru carduri */
 .card {
-  perspective: 1000px;
-  cursor: pointer;
+  perspective: 1000px;           /* Creează efect 3D pentru flip */
+  cursor: pointer;              /* Cursorul indică că este interactiv */
 }
 
 .card-inner {
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
-  position: relative;
+  transition: transform 0.6s;    /* Tranziție pentru efectul de întoarcere */
+  transform-style: preserve-3d; /* Menține perspectiva 3D */
+  position: relative;           /* Poziționare relativă pentru card-front/back */
 }
 
 .card:hover .card-inner {
-  transform: rotateY(180deg);
+  transform: rotateY(180deg);   /* La hover, cardul se rotește */
 }
 
 .card-front,
 .card-back {
-  position: absolute;
-  width: 100%;
-  backface-visibility: hidden;
-  border-radius: 16px;
-  padding: 16px;
+  position: absolute;           /* Suprapunere completă */
+  width: 100%;                  /* Umple containerul */
+  backface-visibility: hidden;  /* Ascunde partea opusă la rotire */
+  border-radius: 16px;          /* Colțuri rotunjite */
+  padding: 16px;                /* Spațiere internă */
 }
 
 .card-front {
-  background-color: white;
+  background-color: white;      /* Fundal alb pentru fața cardului */
 }
 
 .card-back {
-  background-color: #4caf50;
-  color: white;
-  transform: rotateY(180deg);
+  background-color: #4caf50;    /* Fundal verde pentru spate */
+  color: white;                 /* Text alb */
+  transform: rotateY(180deg);   /* Se rotește pentru a se afișa la întoarcere */
 }
 
-
-
 .card img {
-  width: 100%;
-  height: 250px;
-  object-fit: cover; /* Toate imaginile vor avea aceeași dimensiune */
-  border-radius: 8px;
+  width: 100%;                  /* Ocupă toată lățimea */
+  height: 250px;                /* Înălțime fixă */
+  object-fit: cover;            /* Umple complet spațiul fără distorsiuni */
+  border-radius: 8px;           /* Colțuri rotunjite */
 }
 
 /* Butoane generale */
 button {
-  background-color: var(--primary-color);
-  color: white;
-  padding: 10px 15px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+  background-color: var(--primary-color); /* Fundal verde */
+  color: white;                           /* Text alb */
+  padding: 10px 15px;                     /* Spațiere internă */
+  border: none;                           /* Fără contur */
+  border-radius: 5px;                     /* Colțuri rotunjite */
+  cursor: pointer;                        /* Cursor pointer la hover */
+  transition: background-color 0.3s ease; /* Tranziție ușoară pentru hover */
 }
 
 button:hover {
-  background-color: var(--accent-color);
+  background-color: var(--accent-color); /* Schimbă culoarea la hover */
 }
 
 /* Animare la încărcare */
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
+  from { opacity: 0; transform: translateY(10px); } /* Inițial invizibil și puțin jos */
+  to { opacity: 1; transform: translateY(0); }      /* Devine vizibil și urcă */
 }
 
 .fade-in {
-  animation: fadeIn 0.5s ease-in-out;
+  animation: fadeIn 0.5s ease-in-out; /* Aplică animația la apariție */
 }
 
 .loader {
-  border: 5px solid #f3f3f3;
-  border-top: 5px solid #4CAF50;
-  border-radius: 50%;
+  border: 5px solid #f3f3f3;         /* Margine gri deschis */
+  border-top: 5px solid #4CAF50;     /* Partea de sus colorată pentru efectul de rotire */
+  border-radius: 50%;               /* Face cercul */
   width: 50px;
   height: 50px;
-  animation: spin 1s linear infinite;
-  margin: auto;
+  animation: spin 1s linear infinite; /* Rotește cercul constant */
+  margin: auto;                      /* Centrează loaderul */
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% { transform: rotate(0deg); }    /* Start poziție */
+  100% { transform: rotate(360deg); } /* Se rotește complet */
 }
-
 
 /* Card hover effect */
 /*
@@ -203,5 +198,6 @@ button:hover {
 .card-hover:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-}*/
-
+}
+*/
+/* Această secțiune este comentată – oferă un efect de hover adițional cardurilor */

@@ -1,67 +1,66 @@
 /* Stiluri din App.css - extinse */
 .App {
-  text-align: center;
+  text-align: center; /* Centrează conținutul pe orizontală în containerul cu clasa App */
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: #282c34; /* Fundal întunecat pentru antet */
+  min-height: 100vh; /* Înălțime minimă cât întreaga înălțime a ferestrei vizibile */
+  display: flex; /* Activează flexbox */
+  flex-direction: column; /* Aranjarea elementelor pe verticală */
+  align-items: center; /* Centrează elementele pe orizontală */
+  justify-content: center; /* Centrează elementele pe verticală */
+  font-size: calc(10px + 2vmin); /* Dimensiune font reactivă, în funcție de viewport */
+  color: white; /* Culoarea textului în antet */
 }
 
 body {
-  margin: 0;
-  font-family: sans-serif;
-  background-color: #f8f8f8;
-  color: #333;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  margin: 0; /* Elimină spațiul implicit al browserului */
+  font-family: sans-serif; /* Font implicit pentru text */
+  background-color: #f8f8f8; /* Fundal deschis pentru modul normal */
+  color: #333; /* Culoare închisă pentru text */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Tranziție smooth la schimbarea temei */
 }
 
 body.dark-mode,
 .App.dark-mode {
-  background-color: #121212;
-  color: #eee;
+  background-color: #121212; /* Fundal foarte închis pentru modul dark */
+  color: #eee; /* Text mai deschis pentru contrast */
 }
 
 .App.dark-mode a {
-  color: #90caf9;
+  color: #90caf9; /* Culoare deschisă pentru linkuri în modul dark */
 }
 
 .App.dark-mode input,
 .App.dark-mode select,
 .App.dark-mode button {
-  background-color: #1e1e1e;
-  color: #f0f0f0;
-  border-color: #555;
+  background-color: #1e1e1e; /* Fundal întunecat pentru input-uri și butoane */
+  color: #f0f0f0; /* Text deschis la culoare */
+  border-color: #555; /* Culoare mai închisă pentru border */
 }
 
 .App.dark-mode .card {
-  background-color: #1c1c1c;
-  color: white;
+  background-color: #1c1c1c; /* Fundal întunecat pentru carduri */
+  color: white; /* Text alb în interiorul cardurilor */
 }
 
-
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  height: 40vmin; /* Logo-ul va ocupa 40% din înălțimea viewport-ului */
+  pointer-events: none; /* Nu permite interacțiunea cu mouse-ul (e.g., click) */
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-spin infinite 20s linear; /* Aplică o animație de rotație continuă logo-ului dacă utilizatorul nu preferă mișcările reduse */
   }
 }
 
 @keyframes App-logo-spin {
   from {
-    transform: rotate(0deg);
+    transform: rotate(0deg); /* Pornirea animației - fără rotire */
   }
   to {
-    transform: rotate(360deg);
+    transform: rotate(360deg); /* Sfârșitul animației - o rotație completă */
   }
 }
